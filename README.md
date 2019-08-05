@@ -7,7 +7,7 @@ All of the cases files are curated in an extended version of the [MatACDC](https
 ## Problem Overview
 
 These cases are useful for benchmarking solution methods for a variant of the optimal power flow problem common in the academic literature. The features of this model are:
-* Respresentation of the HVDC converter station including converter transformer, harmonic filter and quadratic losses.
+* Respresentation of the HVDC converter station including converter transformer, harmonic filter and quadratic losses
 * Point to point and fully meshed HVDC configuations
 * Optimization of the ac side active and reactive power set points and dc side active power set points for all converters
 * Parametrized model to omit converter transformers or filters 
@@ -16,9 +16,9 @@ These cases are useful for benchmarking solution methods for a variant of the op
 ## Case File Overview
 
 * CASE_5_3  Power flow data for modified 5 bus, 5 gen, 3 bus dc case based on PJM 5-bus system
-* CASE_24_7 based on the IEEE reliability test system with HVDC grid connecting three zones.
-* CASE_39_10 Power flow data for 39 bus New England system with additional 10 converter stations and 12 dc branches.
-* CASE_3120_5 Power flow data for Polish system - summer 2008 morning peak, with 5 additional converter stations and 5 dc branches.
+* CASE_24_7 based on the IEEE reliability test system with HVDC grid connecting three zones
+* CASE_39_10 Power flow data for 39 bus New England system with additional 10 converter stations and 12 dc branches
+* CASE_3120_5 Power flow data for Polish system - summer 2008 morning peak, with 5 additional converter stations and 5 dc branches
 
 ## Example script to run test case
 ```
