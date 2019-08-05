@@ -27,7 +27,7 @@
 & \bm {s^u}_{ij}, \bm {\theta^{\Delta l}}_{ij}, \bm {\theta^{\Delta u}}_{ij} \;\; \forall (i,j) \in E \nonumber \\
 & \bm {p^u}_{ij} \;\; \forall (i,j) \in E_{dc} \nonumber \\
 & \bm r \nonumber \\
-& p_{dc} \\
+& p_{dc} \nonumber \\
 %
 \mbox{\bf variables: } & \nonumber \\
 & S^g_k \;\; \forall k\in G \nonumber \\
@@ -37,6 +37,8 @@
 & V_i \;\; \forall i\in N_{dc} \nonumber \\
 & S_{ij} \;\; \forall (i,j) \in E \cup E^R \nonumber \\
 %
+\end{align} \\
+\begin{align}
 \mbox{\bf minimize: } & \sum_{k \in G} \bm c_{2k} (\Re(S^g_k))^2 + \bm c_{1k}\Re(S^g_k) + \bm c_{0k} \\
 %
 \mbox{\bf subject to: } & \nonumber \\
