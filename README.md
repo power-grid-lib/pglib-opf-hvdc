@@ -1,6 +1,6 @@
 # Power Grid Lib - Optimal Power Flow with HVDC Lines
 
-This benchmark library is curated and maintained by the [IEEE PES Task Force on Benchmarks for Validation of Emerging Power System Algorithms](https://power-grid-lib.github.io/) and is designed to evaluate a variation of the Optimal Power Flow problem with HVDC lines.  Specifically, these cases are designed for benchmarking algorithms that solve the following the Non-Convex Nonlinear Program described in the formulation [PDF document](MODEL.pdf), a more detailed description of the model and implementations is provided in the [transactions paper](https://ieeexplore.ieee.org/document/8636236).  
+This benchmark library is curated and maintained by the [IEEE PES Task Force on Benchmarks for Validation of Emerging Power System Algorithms](https://power-grid-lib.github.io/) and is designed to evaluate a variation of the Optimal Power Flow problem with HVDC lines.  Specifically, these cases are designed for benchmarking algorithms that solve the following the Non-Convex Nonlinear Program described in the formulation [PDF document](MODEL.pdf). An extensive description of the case data and optimization model is provided in the [transactions paper](https://ieeexplore.ieee.org/document/8636236).  
 
 All of the cases files are curated in an extended version of the [MatACDC](https://www.esat.kuleuven.be/electa/teaching/matacdc) data format.  An open-source reference implementations are available in [PowerModelsACDC.jl](https://github.com/hakanergun/PowerModelsACDC.jl).
 
