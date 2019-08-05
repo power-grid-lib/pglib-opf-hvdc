@@ -1,11 +1,9 @@
 using PowerModelsACDC
 using PowerModels
 using Ipopt
-using Memento
-using JuMP
 
 
-ipopt = JuMP.with_optimizer(Ipopt.Optimizer, tol=1e-6, print_level=0)
+ipopt = with_optimizer(Ipopt.Optimizer, tol=1e-6, print_level=0)
 s = Dict("output" => Dict("branch_flows" => true), "conv_losses_mp" => true)
 
 ## case5_3

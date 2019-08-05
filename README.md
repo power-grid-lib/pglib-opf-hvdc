@@ -15,7 +15,22 @@ These cases are useful for benchmarking solution methods for a variant of the op
 
 Case overview
 
+## Example script to run test case
+```
+using PowerModelsACDC, PowerModels, Ipopt
 
+
+ipopt = with_optimizer(Ipopt.Optimizer, tol=1e-6, print_level=0)
+s = Dict("output" => Dict("branch_flows" => true), "conv_losses_mp" => true)
+
+file5_3 = "case5_3_he.m"
+data = PowerModels.parse_file(file5_3)
+data["convdc"] = data["dcconv"]
+data["busdc"] = data["dcbus"]
+data["branchdc"] = data["dcbranch"]
+PowerModelsACDC.process_additional_data!(data)
+result5_3 = run_acdcopf(data, ACPPowerModel, ipopt; setting = s)
+```
 ## Contributions
 
 All case files are provided under a [Creative Commons Attribution License](http://creativecommons.org/licenses/by/4.0/), which allows anyone to share or adapt these cases as long as they give appropriate credit to the original author, provide a link to the license, and indicate if changes were made.
@@ -28,3 +43,6 @@ Community-based recommendations and contributions are welcome and encouraged in 
 This repository is not static.  Consequently, it is critically important to indicate the version number when referencing this repository in scholarly work.
 
 Users of this these cases are encouraged to cite the original source documents mentioned in this overview document.
+
+
+
